@@ -1,0 +1,16 @@
+@import "src/app/layout/theme/variables.scss";
+
+.nav-link {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: $black;
+}
+
+.nav-link:hover {
+    color: $orange;
+}
+
+.HeaderIcon{
+    height: 50px;
+}

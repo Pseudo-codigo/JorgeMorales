@@ -1,0 +1,12 @@
+<nav class="navbar navbar-expand-md fixed-top NavbarColor NavbarBorder">
+    <div class="container-fluid px-4">
+        <div class="navbar-brand Pointer" (click)="ScrollToView()" href="#content">
+            <img class="Logo" src="../../../assets/img/svg/SVGs-01.svg" alt="">
+        </div>
+        <app-menu [Sidebar]="false"></app-menu>
+
+        <button type="button" id="sidebarCollapse" (click)="Toggle()" class="btn BtnColor d-md-none">
+            <img class="MenuIcon" src="../../../assets/img/svg/SVGs-04.svg" alt="">
+        </button>
+    </div>
+</nav>

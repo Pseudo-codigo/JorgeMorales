@@ -1,0 +1,20 @@
+@import "../../../../src/app/layout/theme/variables.scss";
+
+.Logo {
+    height: 25px;
+    object-fit: contain;
+}
+
+.NavbarColor {
+    background-color: $white;
+}
+
+.BtnColor {
+    background-color: $black;
+    padding: 0 10px;
+}
+
+.MenuIcon {
+    height: 26px;
+    object-fit: contain;
+}
