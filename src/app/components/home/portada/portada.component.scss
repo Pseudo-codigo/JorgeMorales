@@ -1,0 +1,73 @@
+@import "app/layout/theme/variables.scss";
+
+.Container {
+    margin-top: 56px;
+}
+
+.TitleBackground {
+    background-color: $green;
+}
+
+.FeaturedBackground {
+    background-color: $purple;
+}
+
+.Featured {
+    height: auto;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.Featured:hover {
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+.Title {
+    color: $purple;
+    line-height: 1;
+    font-size: calc(1.625rem + 4.5vw);
+}
+
+.Subtitle {
+    color: $purple;
+    line-height: normal;
+}
+
+.White {
+    color: $white;
+}
+
+.Globe {
+    height: auto;
+    width: 150px;
+}
+.Destacados {
+    height: auto;
+    width: 135px;
+}
+
+.BtnColor {
+    background-color: $black;
+    padding: 0 10px;
+    border-radius: 15px;
+    border: 3px solid $black;
+    font-size: large;
+}
+
+@media (max-width: 768px) {
+    .Title {
+        font-size: calc(2rem + 3vw);
+    }
+
+    .Globe {
+        width: 100px;
+    }
+}
+
+mat-icon {
+    .no-theme {
+        fill: inherit;
+    }
+}

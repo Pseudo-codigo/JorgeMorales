@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HostListener } from "@angular/core";
 
 @Component({
   selector: 'app-footer',
@@ -8,14 +9,29 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   date: Date = new Date();
+  screenHeight: any;
+  screenWidth: any;
 
-  constructor() { }
+  constructor() {
+    this.getScreenSize();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  getScreenSize(event?: any) {
+    this.screenHeight = window.innerHeight;
+    this.screenWidth = window.innerWidth;
+    // console.log(this.screenHeight, this.screenWidth);
+  }
 
   ngOnInit(): void {
   }
 
   getDateYear(): string {
     return this.date.getFullYear().toString();
+  }
+
+  goToLink(link: string) {
+    window.open(link, '_blank');
   }
 
 }

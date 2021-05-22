@@ -1,0 +1,19 @@
+@import "app/layout/theme/variables.scss";
+
+.About {
+    width: 100%;
+    height: auto;
+}
+
+.AwardsBackground {
+    background-color: $white;
+}
+
+.AboutBackground {
+    background-color: $brown;
+    color: $orange;
+}
+
+.AboutText {
+    line-height: 1.1;
+}

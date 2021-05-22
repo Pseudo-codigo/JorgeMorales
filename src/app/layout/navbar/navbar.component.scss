@@ -1,7 +1,7 @@
-@import "../../../../src/app/layout/theme/variables.scss";
+@import "src/app/layout/theme/variables.scss";
 
 .Logo {
-    height: 25px;
+    height: 27px;
     object-fit: contain;
 }
 
@@ -10,11 +10,20 @@
 }
 
 .BtnColor {
-    background-color: $black;
+    background-color: $white;
     padding: 0 10px;
+    border: 3px solid $black;
+    color: $black;
+    font-size: small;
 }
 
 .MenuIcon {
     height: 26px;
     object-fit: contain;
+}
+
+@media (max-width: 400px) {
+    .Logo {
+        height: 17px;
+    }
 }

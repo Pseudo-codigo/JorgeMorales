@@ -1,0 +1,36 @@
+@import "app/layout/theme/variables.scss";
+.Title {
+    background-color: $black;
+    background-size: 25px 25px;
+    background-image: linear-gradient(to right, $brownLight 1px, transparent 1px),
+        linear-gradient(to bottom, $brownLight 1px, transparent 1px);
+    background-repeat: repeat;
+}
+
+.Recientes {
+    width: 50%;
+    height: auto;
+}
+
+.Proyectos {
+    width: 100%;
+    height: auto;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.Projects {
+    background-color: $cyan;
+}
+
+.Proyectos:hover {
+    background-color: $cyan;
+    transform: scale(1.05);
+    transition: all 0.4s;
+}
+
+@media (max-width: 768px) {
+    .Recientes {
+        width: 80%;
+    }
+}

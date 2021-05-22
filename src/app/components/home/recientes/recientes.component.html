@@ -1,0 +1,19 @@
+<div class="row m-0" id="proyectos">
+    <div class="Title py-4 d-flex">
+        <mat-icon class="Recientes m-auto py-4" svgIcon="recientes">
+        </mat-icon>
+    </div>
+    <div class="Projects px-4 py-4 p-0">
+        <div class="px-2 py-2 py-md-4 px-sm-4">
+            <div class="row">
+                <div *ngFor="let item of projects" class="col-12 col-md-4
+                    d-flex">
+                    <mat-icon (click)="goToLink(item.link)" class="py-4 Proyectos
+                        m-auto"
+                        [svgIcon]="item.name">
+                    </mat-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

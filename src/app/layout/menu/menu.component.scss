@@ -7,10 +7,18 @@
     color: $black;
 }
 
+.MenuItem {
+    font-size: calc(medium - 10px);
+}
+
 .nav-link:hover {
     color: $orange;
 }
+.nav-link.active {
+    color: $orange;
+}
 
-.HeaderIcon{
+.HeaderIcon {
     height: 50px;
+    width: 50px;
 }

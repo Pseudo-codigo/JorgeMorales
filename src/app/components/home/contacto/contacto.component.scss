@@ -1,0 +1,86 @@
+@import "app/layout/theme/variables.scss";
+
+.ContactBackground {
+    background-color: $orange;
+}
+
+.ContactTitle {
+    color: $white;
+    z-index: 2;
+    line-height: 1;
+}
+
+.ContainerForm {
+    width: 80%;
+}
+
+.Error {
+    color: white;
+}
+
+.Input {
+    border: 2px solid $black;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.BtnColor {
+    background-color: $black;
+    border-color: $black;
+    z-index: 2;
+}
+
+.Arrow {
+    width: 20px;
+    height: 20px;
+}
+
+.Green {
+    position: absolute;
+    margin-top: -10px;
+    .Icon {
+        height: 190px;
+        width: 190px;
+    }
+}
+.Blue {
+    position: absolute;
+
+    .Icon {
+        height: 190px;
+        width: 190px;
+    }
+}
+
+@media (min-width: 768px) {
+    .Green {
+        left: 9vw;
+    }
+    .Blue {
+        right: 9vw;
+    }
+}
+@media (max-width: 768px) {
+    .ContactTitle {
+        font-size: calc(2rem + 7vw);
+    }
+
+    .Green {
+        right: 8vw;
+        margin-top: 120px;
+        .Icon {
+            height: 115px;
+            width: 115px;
+        }
+    }
+    .Blue {
+        right: 9vw;
+        transform: rotate(22deg);
+        margin-top: -10px;
+
+        .Icon {
+            height: 120px;
+            width: 120px;
+        }
+    }
+}

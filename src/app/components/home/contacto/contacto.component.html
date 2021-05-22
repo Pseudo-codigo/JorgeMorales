@@ -1,0 +1,80 @@
+<div class="row m-0 Content" id="contacto">
+    <div class="col-12 py-4 px-4 ContactBackground">
+        <div class="px-2 py-0 py-md-4 px-sm-4">
+            <div class="py-0 py-md-4">
+                <div class="py-0 py-md-4">
+                    <div class="Green">
+                        <mat-icon class="Icon" svgIcon="green">
+                        </mat-icon>
+                    </div>
+
+                    <div class="Blue">
+                        <mat-icon class="Icon" svgIcon="blue">
+                        </mat-icon>
+                    </div>
+                    <div class="row m-0 pb-2 pb-md-4 text-start text-md-center">
+                        <div class="display-1 px-0 ContactTitle Regular">
+                            No pierdas tu chance de brillar
+                        </div>
+                    </div>
+                    <div class="row m-0 pt-2 pt-md-4">
+                        <form
+                            name="contactForm"
+                            class="p-0"
+                            [formGroup]="contactForm">
+
+                            <div class="w-50 d-none d-md-block m-auto
+                                text-center">
+                                <div class="input-group">
+                                    <input type="text" class="form-control
+                                        Input"
+                                        [value]="getEmailValue()"
+                                        placeholder="loremipsum@email.com"
+                                        formControlName="email">
+                                    <button (click)="sendEmail()"
+                                        class="btn btn-dark BtnColor
+                                        InputButton d-flex">
+                                        <div>
+                                            Cotiza tu proyecto, es gratis
+                                        </div>
+                                        <mat-icon class="ms-3 me-0 Arrow"
+                                            svgIcon="arrow">
+                                        </mat-icon>
+                                    </button>
+                                </div>
+                                <div class="Error text-start"
+                                    *ngIf="hasError()">
+                                    {{getErrorMessage()}}
+                                </div>
+                            </div>
+                            <div class="d-block d-md-none m-auto">
+                                <div class="ContainerForm d-flex flex-column">
+                                    <input type="text" class="col-12
+                                        form-control Input
+                                        w-100"
+                                        [value]="getEmailValue()"
+                                        placeholder="loremipsum@email.com"
+                                        formControlName="email">
+                                    <div class="Error text-start"
+                                        *ngIf="hasError()">
+                                        {{getErrorMessage()}}
+                                    </div>
+                                    <button (click)="sendEmail()"
+                                        class="btn btn-dark
+                                        InputButton BtnColor text mt-3 d-flex">
+                                        <div>
+                                            Cotiza tu proyecto, es gratis
+                                        </div>
+                                        <mat-icon class="ms-3 me-0 Arrow"
+                                            svgIcon="arrow">
+                                        </mat-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

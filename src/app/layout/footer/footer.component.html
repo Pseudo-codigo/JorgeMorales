@@ -1,28 +1,52 @@
-<div class="BG-Black White" id="RedesSociales">
-    <div class="row m-0">
-        <div class="col-12 text-center">
-            <div class="Outline DisplayTitle Header py-4 m-0">REDES SOCIALES</div>
+<div class="BG-Black Footer p-3">
+    <div id="RedesSociales">
+        <div class="row mx-0 py-4">
+            <div class="col d-none d-md-flex GlobeContainer">
+                <mat-icon class="m-auto w-75 h-100" svgIcon="globePink">
+                </mat-icon>
+            </div>
+            <div class="col SocialContainer py-sm-4 py-0 m-auto">
+                <div class="row m-0 py-1 justify-content-center
+                    justify-content-md-end">
+                    <mat-icon class="SocialLogo Padding px-md-4 pe-md-0"
+                        (click)="goToLink('https://www.behance.net/jorgecesar')"
+                        svgIcon="behanced">
+                    </mat-icon>
+                    <mat-icon class="SocialLogo Padding px-md-4 pe-md-0"
+                        (click)="goToLink('https://www.instagram.com/buhoextinto')"
+                        svgIcon="instagram">
+                    </mat-icon>
+                    <mat-icon class="SocialLogo Padding px-md-4 pe-md-0"
+                        (click)="goToLink('https://dribbble.com/jorgecesar')"
+                        svgIcon="dribbble">
+                    </mat-icon>
+                    <mat-icon class="SocialLogo Padding px-md-4 pe-md-0"
+                        (click)="goToLink('https://wa.me/50431606710')"
+                        svgIcon="whatsapp">
+                    </mat-icon>
+                    <mat-icon class="SocialLogo Padding px-md-4 pe-md-0"
+                        (click)="goToLink('https://twitter.com/jorgecaesar')"
+                        svgIcon="twitter">
+                    </mat-icon>
+                </div>
+                <div class="row d-none d-md-flex m-0 py-1 justify-content-end">
+                    <mat-icon class="Logo p-0" svgIcon="logoPink">
+                    </mat-icon>
+                    <span class="px-2 w-auto my-auto">—</span>
+                    <span class="px-1 w-auto my-auto Slogan Light">
+                        Un estudio creativo independiente con libertad de
+                        expresión visual.
+                    </span>
+                </div>
+            </div>
+            <!-- <div class="col-12 d-flex d-md-none m-0 justify-content-center">
+                <img class="Logo p-0" src="assets/img/svg/SVGs-34.svg"
+                    alt="Logo">
+                <span class="px-2 w-auto my-auto">—</span>
+                <span class="px-1 w-auto my-auto Slogan">
+                    Un estudio creativo independiente con libertad de expresión visual.
+                </span>
+            </div> -->
         </div>
-        <div class="col-12 col-md-4 text-center">
-            <div class="h1 Header py-4 m-0"><a target="_blank" href="https://www.instagram.com/cesarmorales.co/"
-                    class="RemoveLink White">INSTAGRAM</a></div>
-        </div>
-
-        <div class="col-12 order-last col-md-4 text-center Copyright">
-            <div class="h6 Header py-4 m-0 Lineheight"> {{getDateYear()}} © CÉSAR MORALES</div>
-        </div>
-        <div class="col-12 col-md-4 order-md-last text-center">
-            <div class="h1 Header py-4 m-0"><a target="_blank" href="https://www.youtube.com/user/cesarmoralesc"
-                    class="RemoveLink White">YOUTUBE</a> </div>
-        </div>
-
-        <div class="col-12 p-3 order-last text-center">
-            <img class="d-none d-md-block w-100" src="../../../assets/img/SVGs/logos/footer_web.svg" alt="">
-            <img class="d-md-none w-100" src="../../../assets/img/SVGs/logos/footer_mobile.svg" alt="">
-        </div>
-    </div>
-    <div class="rellax Absolute" data-rellax-xs-speed="0.9" data-rellax-mobile-speed="1.3"
-        data-rellax-tablet-speed="1.2" data-rellax-desktop-speed="0.9">
-        <img src="../../../assets/img/SVGs/icons/hand.svg" class="ImgHand" alt="">
     </div>
 </div>

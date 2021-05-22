@@ -22,7 +22,6 @@ export class ContainerComponent implements OnInit {
   Toggle = () => {
 
     this.Active = true;
-    // $('.collapse.in').toggleClass('in');
   }
 
 }

@@ -19,6 +19,11 @@ export class NavbarComponent implements OnInit {
     this.ToggleEvent.emit();
   }
 
+  
+  Empieza() {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSduA_2gZebzhedR6dkX62yeCAOU40A15FZFDXB5uh2Yc271lQ/viewform", '_blank');
+  }
+
   ScrollToView() {
     this.Scroll.ScrollToView('#content');
   }
