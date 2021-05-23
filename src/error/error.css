@@ -1,0 +1,55 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.scenery {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.scenery .sky {
+    height: 100%;
+    background-color: #B2E2FB;
+    position: relative;
+}
+
+.scenery .sky>div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.scenery .sky .text {
+    font-family: 'Titillium Web', sans-serif;
+    color: #ED664D;
+    font-size: 30vw;
+    text-align: center;
+}
+
+.scenery .sky .text:first-child {
+    left: 25%;
+}
+
+.scenery .sky .text:last-child {
+    left: 75%;
+}
+
+.scenery .sky .sun {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: #ED664D;
+}
+
+.scenery .sea {
+    height: 50%;
+    width: 100%;
+    background-color: #1147CD;
+    position: absolute;
+    bottom: 0px;
+    opacity: 0.8;
+}
