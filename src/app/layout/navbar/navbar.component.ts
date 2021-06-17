@@ -21,7 +21,7 @@ export class NavbarComponent implements OnInit {
 
   
   Empieza() {
-    window.open("https://docs.google.com/forms/d/e/1FAIpQLSduA_2gZebzhedR6dkX62yeCAOU40A15FZFDXB5uh2Yc271lQ/viewform", '_blank');
+    window.open("https://r2b1mpr0739.typeform.com/to/YV4o6wm3", '_blank');
   }
 
   ScrollToView() {
